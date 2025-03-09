@@ -1,0 +1,47 @@
+.header{
+    margin-top:70px;
+    width:100%;
+    display:flex;
+    justify-content:center;
+    position: relative;
+    top:-50px;
+}
+.header img{
+    height:450px;
+    width:100%;
+    object-fit:cover;
+}
+.header h1{
+    display: block;
+    position:absolute;
+    font-family: 'Courier New', Courier, monospace;
+    font-size:4rem;
+    color:rgb(0, 0, 0);
+    text-shadow: 0px 2px 40px rgb(255, 169, 231);  
+    background-color: transparent;
+}
+
+/*Scroll Animation*/
+.header {
+    transform: translateX(-30px);
+    transition: all 2s;
+    opacity: 0;
+ }
+ .header.active {
+    transform: translateX(0px);
+    opacity: 1;
+ }
+ 
+ .header h1{
+    position: absolute;
+    transform: translateY(-20px);
+    transition: all 0.8s;
+    opacity: 0;
+ }
+ .header.active h1{
+    position: absolute;
+    transform: translateY(0px);
+    opacity: 1;
+    transition-delay:1s;
+ }
+ 
