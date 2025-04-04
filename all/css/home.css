@@ -1,11 +1,11 @@
-.home{
-    width:100;
-   display:flex;
-   justify-content:center;
-   margin-top:50px;
-   padding:0px 10px;
-
+.home {
+    width: 100%; /* % ekledim */
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    padding: 0px 10px;
 }
+
 .home .wrapper{
     width:100%;
     max-width:1366px;

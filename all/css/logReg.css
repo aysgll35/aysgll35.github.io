@@ -1,106 +1,101 @@
 .logReg{
-    background-color:transparent;
-    position:relative;
+   background-color:transparent;
+   position:relative;
 }
-
-.logReg img{ 
-   width: 100%;
-   height: calc(100vh - 50px);
+.logReg img {
+   width: auto;
    object-fit: cover;
-
-
    padding: 0;
    margin-bottom: 0;
-
-
    
-}
-
-
-
+   display: block; /* Bu, img'yi bir blok öğesi yapar */
+   margin-left: auto; /* Yatayda otomatik marjin, ortalar */
+   margin-right: auto; /* Yatayda otomatik marjin, ortalar */
+ }
+ 
 
 .logReg form {
-   position: fixed;       /* Sabit pozisyon */
-   width: 350px;
-   left: 50%;             /* Sayfanın ortasına hizalar */
-   bottom: 10px;          /* Sayfanın alt kısmına 10px mesafe bırakır */
-   transform: translateX(-50%); /* Sol kenara göre ortalar */
+  position: fixed;       /* Sabit pozisyon */
+  width: 350px;
+  left: 50%;             /* Sayfanın ortasına hizalar */
+  bottom: 10px;          /* Sayfanın alt kısmına 10px mesafe bırakır */
+  transform: translateX(-50%); /* Sol kenara göre ortalar */
+  background-color:transparent;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 500px rgb(245, 82, 79);
+   
+}
+.logReg form .formGroup{
    background-color:transparent;
-   padding: 20px;
-   border-radius: 10px;
-   box-shadow: 0px 0px 500px rgb(245, 82, 79);
-    
- }
- .logReg form .formGroup{
-    background-color:transparent;
-    margin-bottom: 20px;
-    position: relative;
+   margin-bottom: 20px;
+   position: relative;
 
- }
+}
 
- .logReg form .formGroup input{
-    width:100%;
-    height:30px;
-    padding:0px 0px 0px 10px;
-    border:none;
-    outline:auto;
-    outline-color:transparen;
-    background:rgb(255, 9, 50);
- }
+.logReg form .formGroup input{
+   width:100%;
+   height:30px;
+   padding:0px 0px 0px 10px;
+   border:none;
+   outline:auto;
+   outline-color:transparen;
+   background:rgb(255, 9, 50);
+}
 
- .logReg form .formGroup span{
-    position:absolute;
-    left:3px;
-    top:2px;
-    background:transparent;
-    border-radius: 3px;
-    padding: 2px 7px;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
- }
+.logReg form .formGroup span{
+   position:absolute;
+   left:3px;
+   top:2px;
+   background:transparent;
+   border-radius: 3px;
+   padding: 2px 7px;
+   font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
 
- .logReg form .formGroup input:focus ~ span, .logReg form .formGroup input:valid ~ span{
-    top:-3px;
-    left:5px;
-    background-color:rgb(89, 0, 255);
-    transition: all 0.4s;
- }
+.logReg form .formGroup input:focus ~ span, .logReg form .formGroup input:valid ~ span{
+   top:-3px;
+   left:5px;
+   background-color:rgb(89, 0, 255);
+   transition: all 0.4s;
+}
 
- .logReg form .btnGroup a{
-   color:rgb(52, 196, 182);
-   background:rgb(27, 117, 15);
-   background-color: rgb(255, 127, 204);
-   transition: all 0.5s;
-   display:flex;
-   justify-content: center;
-   border-radius: 10px;
+.logReg form .btnGroup a{
+  color:rgb(52, 196, 182);
+  background:rgb(27, 117, 15);
+  background-color: rgb(255, 127, 204);
+  transition: all 0.5s;
+  display:flex;
+  justify-content: center;
+  border-radius: 10px;
 
 }
 
 
 .logReg form .btnGroup button:hover{
-   border-color: rgb(255, 0, 0);
-   background: rgb(182, 225, 255);
-   border-radius: 50px;
-   
-   transition: all 0.5s;
+  border-color: rgb(255, 0, 0);
+  background: rgb(182, 225, 255);
+  border-radius: 50px;
+  
+  transition: all 0.5s;
 
 
-   
+  
 }
 
- .logReg form .btnGroup button{
-    font-family:cursive;
-    transition: all 0.2s;
-    display: flex;
-    justify-content: center;        /* Yatayda ortalar */
-    align-items: center;            /* Dikeyde ortalar */
-    width: 100%;                     /* Genişliği %100 yapar */
-    margin-top:auto; 
-   
-    outline:none;
-   background: rgb(182, 225, 255);
-    cursor:pointer;
-    border-radius: auto;
-    padding:10px 5px;
-    background-color: rgb(118, 111, 255);
- }
+.logReg form .btnGroup button{
+   font-family:cursive;
+   transition: all 0.2s;
+   display: flex;
+   justify-content: center;        /* Yatayda ortalar */
+   align-items: center;            /* Dikeyde ortalar */
+   width: 100%;                     /* Genişliği %100 yapar */
+   margin-top:auto; 
+  
+   outline:none;
+  background: rgb(182, 225, 255);
+   cursor:pointer;
+   border-radius: auto;
+   padding:10px 5px;
+   background-color: rgb(118, 111, 255);
+}

@@ -1,16 +1,16 @@
 .about {
-    padding: 0px 20px;
- }
- 
- .about .wrapper {
-    width: 100%;
-    max-width: 1366px;
-    margin: 50px auto;
-    padding: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    border-radius: 10px;
-    display: flex;
- }
+   padding: 0px 20px;
+}
+
+.about .wrapper {
+   width: 100%;
+   max-width: 1366px;
+   margin: 50px auto;
+   padding: 10px;
+   border: 1px solid rgba(0, 0, 0, 0.2);
+   border-radius: 10px;
+   display: flex;
+}
  .about .wrapper:nth-child(2n) {
     flex-direction: row-reverse;
  }
@@ -98,3 +98,9 @@
  .about .wrapper.active .photo {
     transform: translateX(0px);
  }
+
+
+
+
+/*books*/
+/* Kitaplar için genel stil */
